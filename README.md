@@ -14,7 +14,7 @@ This project demonstrates using files stored in [iRODS](https://irods.org) as th
 
 ## Usage
 
-A script named `configure-for-davrods.sh` has been created to prepare the host environment for running the [SUMMA Test Cases](https://ral.ucar.edu/projects/summa) using a docker container named `summa:bionic`.
+A script named `configure-for-davrods.sh` has been created to prepare the host environment for running the [SUMMA Test Cases](https://ral.ucar.edu/projects/summa) using a docker container named ~~`summa:local`~~ bartnijssen/summa:latest.
 
 This script:
 
