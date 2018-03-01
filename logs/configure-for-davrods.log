@@ -1,0 +1,33 @@
+irods-provider
+davrods-server
+irods-provider
+davrods-server
+summa-davrods
+davrods-volume
+04266021c17a8268b70b1dada922a088f13aaf862637110c1268ca30889a585b
+ff5e52b4ce518820e626b3079b60e9b22aa8d91e0bb8b841a6168b339667601c
+Allowing irods-provider to setup...
+...waiting
+...waiting
+...waiting
+...waiting
+...waiting
+...waiting
+INFO: irods-provider is running
+TestCases for docker installed
+/Users/stealey/Github/scidas/summa-davrods
+/tempZone/home/rods:
+  C- /tempZone/home/rods/output
+  C- /tempZone/home/rods/settings
+  C- /tempZone/home/rods/testCases_data
+981aadbf60c91b2c7fee8e395c6c32d759f90d9a91e7853f991aff2b33e51f5f
+Allowing davrods-server to setup...
+curl: (52) Empty reply from server
+...waiting
+INFO: davrods-server avaialble at: http://localhost:8080/
+  - user: rods
+  - pass: rods
+davrods-volume
+INFO: Ready to run test cases in Docker:
+  - $ cd summaTestCases_2.x
+  - $ ./runTestCases_docker_davrods.sh
