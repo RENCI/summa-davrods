@@ -1,6 +1,20 @@
+$ ./runTestCases_docker_davrods.sh
+Unable to find image 'bartnijssen/summa:latest' locally
+latest: Pulling from bartnijssen/summa
+0bbeb3f34b71: Pull complete
+fb8d5f4c517a: Pull complete
+c4cd377f2172: Pull complete
+968d05a75978: Pull complete
+f358380db9ed: Pull complete
+b88bb1ad542e: Pull complete
+4209887b8dca: Pull complete
+e87f82c291f1: Pull complete
+9c846c4db908: Pull complete
+Digest: sha256:917c495b4cd776440ef7ac1a8cb59913b3b3ae61a0d682acc0d5c7604c2edc71
+Status: Downloaded newer image for bartnijssen/summa:latest
 file_suffix is '_testSumma_docker'.
 file_master is '/summaTestCases_2.x/settings/syntheticTestCases/celia1990/summa_fileManager_celia1990.txt'.
-start at 20:35:49
+start at 16:55:57
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/syntheticTestCases/celia1990/summa_zDecisions_celia1990.txt
    1 simulStart: 2000-01-01 00:30
@@ -55,18 +69,18 @@ Skipping over SLTYPE = STAS-RUC
  heightCanopyBottom
  maxStepsPerFile, maxLength =          120       12720
 Created output file:/summaTestCases_2.x/output/syntheticTestCases/celia1990/celia1990_2000-01-01-00_spinup_testSumma_docker_1.nc
-initial date/time = 2018-03-01  20:35:49.182
-  final date/time = 2018-03-01  20:35:51.745
+initial date/time = 2018-03-02  16:55:57.373
+  final date/time = 2018-03-02  16:56:00.191
 
-     elapsed time =    2.563000     s
-       or             4.2716667E-02 m
-       or             7.1194444E-04 h
-       or             2.9664352E-05 d
+     elapsed time =    2.818000     s
+       or             4.6966667E-02 m
+       or             7.8277778E-04 h
+       or             3.2615741E-05 d
 
  FORTRAN STOP: finished simulation successfully.
 file_suffix is '_testSumma_docker'.
 file_master is '/summaTestCases_2.x/settings/syntheticTestCases/colbeck1976/summa_fileManager_colbeck1976-exp1.txt'.
-start at 20:35:58
+start at 16:56:06
 Name of Model Output control file: /summaTestCases_2.x/settings/syntheticTestCases/colbeck1976/summa_defineModelOutput.txt
 decisions file =  /summaTestCases_2.x/settings/syntheticTestCases/colbeck1976/summa_zDecisions_colbeck1976.txt
    1 simulStart: 1990-01-01 00:01
@@ -112,18 +126,18 @@ Skipping over SLTYPE = STAS-RUC
  zmin
  maxStepsPerFile, maxLength =          600       72600
 Created output file:/summaTestCases_2.x/output/syntheticTestCases/colbeck1976/colbeck1976-exp1_1990-01-01-00_spinup_testSumma_docker_1.nc
-initial date/time = 2018-03-01  20:35:58.105
-  final date/time = 2018-03-01  20:36:01.405
+initial date/time = 2018-03-02  16:56:06.635
+  final date/time = 2018-03-02  16:56:10.492
 
-     elapsed time =    3.300000     s
-       or             5.5000000E-02 m
-       or             9.1666667E-04 h
-       or             3.8194444E-05 d
+     elapsed time =    3.857000     s
+       or             6.4283333E-02 m
+       or             1.0713889E-03 h
+       or             4.4641204E-05 d
 
  FORTRAN STOP: finished simulation successfully.
 file_suffix is '_testSumma_docker'.
 file_master is '/summaTestCases_2.x/settings/syntheticTestCases/colbeck1976/summa_fileManager_colbeck1976-exp2.txt'.
-start at 20:36:07
+start at 16:56:17
 Name of Model Output control file: /summaTestCases_2.x/settings/syntheticTestCases/colbeck1976/summa_defineModelOutput.txt
 decisions file =  /summaTestCases_2.x/settings/syntheticTestCases/colbeck1976/summa_zDecisions_colbeck1976.txt
    1 simulStart: 1990-01-01 00:01
@@ -169,18 +183,18 @@ Skipping over SLTYPE = STAS-RUC
  zmin
  maxStepsPerFile, maxLength =          600       72600
 Created output file:/summaTestCases_2.x/output/syntheticTestCases/colbeck1976/colbeck1976-exp2_1990-01-01-00_spinup_testSumma_docker_1.nc
-initial date/time = 2018-03-01  20:36:07.824
-  final date/time = 2018-03-01  20:36:11.002
+initial date/time = 2018-03-02  16:56:17.069
+  final date/time = 2018-03-02  16:56:21.600
 
-     elapsed time =    3.178000     s
-       or             5.2966667E-02 m
-       or             8.8277778E-04 h
-       or             3.6782407E-05 d
+     elapsed time =    4.531000     s
+       or             7.5516667E-02 m
+       or             1.2586111E-03 h
+       or             5.2442130E-05 d
 
  FORTRAN STOP: finished simulation successfully.
 file_suffix is '_testSumma_docker'.
 file_master is '/summaTestCases_2.x/settings/syntheticTestCases/colbeck1976/summa_fileManager_colbeck1976-exp3.txt'.
-start at 20:36:17
+start at 16:56:28
 Name of Model Output control file: /summaTestCases_2.x/settings/syntheticTestCases/colbeck1976/summa_defineModelOutput.txt
 decisions file =  /summaTestCases_2.x/settings/syntheticTestCases/colbeck1976/summa_zDecisions_colbeck1976.txt
    1 simulStart: 1990-01-01 00:01
@@ -227,18 +241,18 @@ Skipping over SLTYPE = STAS-RUC
  zmax
  maxStepsPerFile, maxLength =          600       72600
 Created output file:/summaTestCases_2.x/output/syntheticTestCases/colbeck1976/colbeck1976-exp3_1990-01-01-00_spinup_testSumma_docker_1.nc
-initial date/time = 2018-03-01  20:36:17.348
-  final date/time = 2018-03-01  20:36:21.049
+initial date/time = 2018-03-02  16:56:28.039
+  final date/time = 2018-03-02  16:56:32.424
 
-     elapsed time =    3.701000     s
-       or             6.1683333E-02 m
-       or             1.0280556E-03 h
-       or             4.2835648E-05 d
+     elapsed time =    4.385000     s
+       or             7.3083333E-02 m
+       or             1.2180556E-03 h
+       or             5.0752315E-05 d
 
  FORTRAN STOP: finished simulation successfully.
 file_suffix is '_testSumma_docker'.
 file_master is '/summaTestCases_2.x/settings/syntheticTestCases/miller1998/summa_fileManager_millerClay.txt'.
-start at 20:36:27
+start at 16:56:38
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/syntheticTestCases/miller1998/summa_zDecisions_miller1998.txt
    1 simulStart: 2000-01-01 00:30
@@ -293,18 +307,18 @@ Skipping over SLTYPE = STAS-RUC
  heightCanopyBottom
  maxStepsPerFile, maxLength =          239       77914
 Created output file:/summaTestCases_2.x/output/syntheticTestCases/miller1998/millerClay_2000-01-01-00_spinup_testSumma_docker_1.nc
-initial date/time = 2018-03-01  20:36:27.595
-  final date/time = 2018-03-01  20:36:33.028
+initial date/time = 2018-03-02  16:56:38.840
+  final date/time = 2018-03-02  16:56:45.077
 
-     elapsed time =    5.433000     s
-       or             9.0550000E-02 m
-       or             1.5091667E-03 h
-       or             6.2881944E-05 d
+     elapsed time =    6.237000     s
+       or             0.1039500     m
+       or             1.7325000E-03 h
+       or             7.2187500E-05 d
 
  FORTRAN STOP: finished simulation successfully.
 file_suffix is '_testSumma_docker'.
 file_master is '/summaTestCases_2.x/settings/syntheticTestCases/miller1998/summa_fileManager_millerLoam.txt'.
-start at 20:36:39
+start at 16:56:51
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/syntheticTestCases/miller1998/summa_zDecisions_miller1998.txt
    1 simulStart: 2000-01-01 00:30
@@ -359,18 +373,19 @@ Skipping over SLTYPE = STAS-RUC
  heightCanopyBottom
  maxStepsPerFile, maxLength =          239       97034
 Created output file:/summaTestCases_2.x/output/syntheticTestCases/miller1998/millerLoam_2000-01-01-00_spinup_testSumma_docker_1.nc
-initial date/time = 2018-03-01  20:36:39.591
-  final date/time = 2018-03-01  20:36:46.187
+initial date/time = 2018-03-02  16:56:51.469
+  final date/time = 2018-03-02  16:56:57.667
 
-     elapsed time =    6.596000     s
-       or             0.1099333     m
-       or             1.8322222E-03 h
-       or             7.6342593E-05 d
+     elapsed time =    6.198000     s
+       or             0.1033000     m
+       or             1.7216667E-03 h
+       or             7.1736111E-05 d
 
  FORTRAN STOP: finished simulation successfully.
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
 file_suffix is '_testSumma_docker'.
 file_master is '/summaTestCases_2.x/settings/syntheticTestCases/miller1998/summa_fileManager_millerSand.txt'.
-start at 20:36:52
+start at 16:57:04
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/syntheticTestCases/miller1998/summa_zDecisions_miller1998.txt
    1 simulStart: 2000-01-01 00:30
@@ -430,13 +445,13 @@ FATAL ERROR: check_icond/cannot initialize the model with volumetric fraction of
  error, variable dump:
  modelTimeStep =            0
  error code =           20
-  1939591504       22037           0           0           0
+  1124655440       21912           0           0           0
  trim(nf90_strerror(err) = NetCDF: Not a valid ID
  nc_file_close/[NetCDF: Not a valid ID]
  nc_file_close/[NetCDF: Not a valid ID]
 file_suffix is '_testSumma_docker'.
 file_master is '/summaTestCases_2.x/settings/syntheticTestCases/mizoguchi1990/summa_fileManager_mizoguchi.txt'.
-start at 20:37:00
+start at 16:57:12
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/syntheticTestCases/mizoguchi1990/summa_zDecisions_mizoguchi.txt
    1 simulStart: 2000-01-01 00:01
@@ -486,18 +501,19 @@ Skipping over SLTYPE = STAS-RUC
  k_macropore
  maxStepsPerFile, maxLength =         3600      435600
 Created output file:/summaTestCases_2.x/output/syntheticTestCases/mizoguchi1990/mizoguchi1990_2000-01-01-00_spinup_testSumma_docker_1.nc
-initial date/time = 2018-03-01  20:37:00.486
-  final date/time = 2018-03-01  20:37:11.408
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+initial date/time = 2018-03-02  16:57:12.180
+  final date/time = 2018-03-02  16:57:27.529
 
-     elapsed time =    10.92200     s
-       or             0.1820333     m
-       or             3.0338889E-03 h
-       or             1.2641204E-04 d
+     elapsed time =    15.34900     s
+       or             0.2558167     m
+       or             4.2636111E-03 h
+       or             1.7765046E-04 d
 
  FORTRAN STOP: finished simulation successfully.
 file_suffix is '_testSumma_docker'.
 file_master is '/summaTestCases_2.x/settings/syntheticTestCases/wigmosta1999/summa_fileManager-exp1.txt'.
-start at 20:37:18
+start at 16:57:34
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/syntheticTestCases/wigmosta1999/summa_zDecisions.txt
    1 simulStart: 2000-01-01 01:00
@@ -550,18 +566,19 @@ Skipping over SLTYPE = STAS-RUC
  zScale_TOPMODEL
  maxStepsPerFile, maxLength =         1007       14098
 Created output file:/summaTestCases_2.x/output/syntheticTestCases/wigmosta1999/syntheticHillslope-exp1_2000-01-01-01_spinup_testSumma_docker_1.nc
-initial date/time = 2018-03-01  20:37:18.325
-  final date/time = 2018-03-01  20:39:23.178
+initial date/time = 2018-03-02  16:57:34.048
+  final date/time = 2018-03-02  17:00:21.756
 
-     elapsed time =    124.8530     s
-       or              2.080883     m
-       or             3.4681389E-02 h
-       or             1.4450579E-03 d
+     elapsed time =    167.7080     s
+       or              2.795133     m
+       or             4.6585556E-02 h
+       or             1.9410648E-03 d
 
  FORTRAN STOP: finished simulation successfully.
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
 file_suffix is '_testSumma_docker'.
 file_master is '/summaTestCases_2.x/settings/syntheticTestCases/wigmosta1999/summa_fileManager-exp2.txt'.
-start at 20:39:29
+start at 17:00:28
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/syntheticTestCases/wigmosta1999/summa_zDecisions.txt
    1 simulStart: 2000-01-01 01:00
@@ -614,18 +631,19 @@ Skipping over SLTYPE = STAS-RUC
  zScale_TOPMODEL
  maxStepsPerFile, maxLength =         1007       14098
 Created output file:/summaTestCases_2.x/output/syntheticTestCases/wigmosta1999/syntheticHillslope-exp2_2000-01-01-01_spinup_testSumma_docker_1.nc
-initial date/time = 2018-03-01  20:39:29.745
-  final date/time = 2018-03-01  20:41:40.078
+initial date/time = 2018-03-02  17:00:28.201
+  final date/time = 2018-03-02  17:03:09.261
 
-     elapsed time =    130.3330     s
-       or              2.172217     m
-       or             3.6203611E-02 h
-       or             1.5084838E-03 d
+     elapsed time =    161.0600     s
+       or              2.684333     m
+       or             4.4738889E-02 h
+       or             1.8641204E-03 d
 
  FORTRAN STOP: finished simulation successfully.
+Note: The following floating-point exceptions are signalling: IEEE_DENORMAL
 file_suffix is '_riparianAspenBeersLaw'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure01/summa_fileManager_riparianAspenBeersLaw.txt'.
-start at 20:41:46
+start at 17:03:15
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure01/summa_zDecisions_riparianAspenBeersLaw.txt
    1 simulStart: 2005-07-01 00:00
@@ -689,18 +707,19 @@ Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure01/vegImp
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure01/vegImpactsRad_2006-2007_riparianAspenBeersLaw_1.nc
  maxStepsPerFile, maxLength =        28489      398846
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure01/vegImpactsRad_2007-2008_riparianAspenBeersLaw_1.nc
-initial date/time = 2018-03-01  20:41:46.494
-  final date/time = 2018-03-01  20:43:04.670
+initial date/time = 2018-03-02  17:03:15.731
+  final date/time = 2018-03-02  17:04:54.426
 
-     elapsed time =    78.17600     s
-       or              1.302933     m
-       or             2.1715556E-02 h
-       or             9.0481481E-04 d
+     elapsed time =    98.69500     s
+       or              1.644917     m
+       or             2.7415278E-02 h
+       or             1.1423032E-03 d
 
  FORTRAN STOP: finished simulation successfully.
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG
 file_suffix is '_riparianAspenNLscatter'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure01/summa_fileManager_riparianAspenNLscatter.txt'.
-start at 20:43:11
+start at 17:05:00
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure01/summa_zDecisions_riparianAspenNLscatter.txt
    1 simulStart: 2005-07-01 00:00
@@ -764,18 +783,19 @@ Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure01/vegImp
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure01/vegImpactsRad_2006-2007_riparianAspenNLscatter_1.nc
  maxStepsPerFile, maxLength =        28489      398846
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure01/vegImpactsRad_2007-2008_riparianAspenNLscatter_1.nc
-initial date/time = 2018-03-01  20:43:11.114
-  final date/time = 2018-03-01  20:44:27.528
+initial date/time = 2018-03-02  17:05:00.969
+  final date/time = 2018-03-02  17:06:36.910
 
-     elapsed time =    76.41400     s
-       or              1.273567     m
-       or             2.1226111E-02 h
-       or             8.8442130E-04 d
+     elapsed time =    95.94100     s
+       or              1.599017     m
+       or             2.6650278E-02 h
+       or             1.1104282E-03 d
 
  FORTRAN STOP: finished simulation successfully.
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG
 file_suffix is '_riparianAspenUEB2stream'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure01/summa_fileManager_riparianAspenUEB2stream.txt'.
-start at 20:44:34
+start at 17:06:43
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure01/summa_zDecisions_riparianAspenUEB2stream.txt
    1 simulStart: 2005-07-01 00:00
@@ -839,18 +859,19 @@ Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure01/vegImp
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure01/vegImpactsRad_2006-2007_riparianAspenUEB2stream_1.nc
  maxStepsPerFile, maxLength =        28489      398846
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure01/vegImpactsRad_2007-2008_riparianAspenUEB2stream_1.nc
-initial date/time = 2018-03-01  20:44:34.080
-  final date/time = 2018-03-01  20:45:54.550
+initial date/time = 2018-03-02  17:06:43.380
+  final date/time = 2018-03-02  17:08:20.290
 
-     elapsed time =    80.47000     s
-       or              1.341167     m
-       or             2.2352778E-02 h
-       or             9.3136574E-04 d
+     elapsed time =    96.91000     s
+       or              1.615167     m
+       or             2.6919444E-02 h
+       or             1.1216435E-03 d
 
  FORTRAN STOP: finished simulation successfully.
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
 file_suffix is '_riparianAspenCLM2stream'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure01/summa_fileManager_riparianAspenCLM2stream.txt'.
-start at 20:46:01
+start at 17:08:26
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure01/summa_zDecisions_riparianAspenCLM2stream.txt
    1 simulStart: 2005-07-01 00:00
@@ -914,18 +935,19 @@ Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure01/vegImp
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure01/vegImpactsRad_2006-2007_riparianAspenCLM2stream_1.nc
  maxStepsPerFile, maxLength =        28489      398846
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure01/vegImpactsRad_2007-2008_riparianAspenCLM2stream_1.nc
-initial date/time = 2018-03-01  20:46:01.025
-  final date/time = 2018-03-01  20:47:19.998
+initial date/time = 2018-03-02  17:08:26.745
+  final date/time = 2018-03-02  17:10:06.696
 
-     elapsed time =    78.97300     s
-       or              1.316217     m
-       or             2.1936944E-02 h
-       or             9.1403935E-04 d
+     elapsed time =    99.95100     s
+       or              1.665850     m
+       or             2.7764167E-02 h
+       or             1.1568403E-03 d
 
  FORTRAN STOP: finished simulation successfully.
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG
 file_suffix is '_riparianAspenVegParamPerturb'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure01/summa_fileManager_riparianAspenVegParamPerturb.txt'.
-start at 20:47:26
+start at 17:10:13
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure01/summa_zDecisions_riparianAspenUEB2stream.txt
    1 simulStart: 2005-07-01 00:00
@@ -987,18 +1009,19 @@ Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure01/vegImp
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure01/vegImpactsRad_2006-2007_riparianAspenVegParamPerturb_1.nc
  maxStepsPerFile, maxLength =        28489      398846
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure01/vegImpactsRad_2007-2008_riparianAspenVegParamPerturb_1.nc
-initial date/time = 2018-03-01  20:47:26.486
-  final date/time = 2018-03-01  20:53:40.517
+initial date/time = 2018-03-02  17:10:13.262
+  final date/time = 2018-03-02  17:17:48.751
 
-     elapsed time =    374.0310     s
-       or              6.233850     m
-       or             0.1038975     h
-       or             4.3290625E-03 d
+     elapsed time =    455.4890     s
+       or              7.591483     m
+       or             0.1265247     h
+       or             5.2718634E-03 d
 
  FORTRAN STOP: finished simulation successfully.
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
 file_suffix is '_riparianAspenWindParamPerturb'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure02/summa_fileManager_riparianAspenWindParamPerturb.txt'.
-start at 20:53:46
+start at 17:17:55
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure02/summa_zDecisions_riparianAspenUEB2stream.txt
    1 simulStart: 2005-07-01 00:00
@@ -1060,18 +1083,19 @@ Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure02/vegImp
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure02/vegImpactsWind_2006-2007_riparianAspenWindParamPerturb_1.nc
  maxStepsPerFile, maxLength =        28489      398846
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure02/vegImpactsWind_2007-2008_riparianAspenWindParamPerturb_1.nc
-initial date/time = 2018-03-01  20:53:46.931
-  final date/time = 2018-03-01  20:59:53.959
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+initial date/time = 2018-03-02  17:17:55.281
+  final date/time = 2018-03-02  17:25:17.297
 
-     elapsed time =    367.0280     s
-       or              6.117133     m
-       or             0.1019522     h
-       or             4.2480093E-03 d
+     elapsed time =    442.0160     s
+       or              7.366933     m
+       or             0.1227822     h
+       or             5.1159259E-03 d
 
  FORTRAN STOP: finished simulation successfully.
 file_suffix is '_riparianAspenExpWindProfile'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure03/summa_fileManager_riparianAspenExpWindProfile.txt'.
-start at 21:00:00
+start at 17:25:23
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure03/summa_zDecisions_riparianAspenExpWindProfile.txt
    1 simulStart: 2005-07-01 00:00
@@ -1135,18 +1159,19 @@ Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure03/vegImp
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure03/vegImpactsWind_2006-2007_riparianAspenExpWindProfile_1.nc
  maxStepsPerFile, maxLength =        28489      398846
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure03/vegImpactsWind_2007-2008_riparianAspenExpWindProfile_1.nc
-initial date/time = 2018-03-01  21:00:00.470
-  final date/time = 2018-03-01  21:02:19.568
+initial date/time = 2018-03-02  17:25:23.729
+  final date/time = 2018-03-02  17:28:11.752
 
-     elapsed time =    139.0980     s
-       or              2.318300     m
-       or             3.8638333E-02 h
-       or             1.6099306E-03 d
+     elapsed time =    168.0230     s
+       or              2.800383     m
+       or             4.6673056E-02 h
+       or             1.9447106E-03 d
 
  FORTRAN STOP: finished simulation successfully.
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
 file_suffix is '_hedpom9697'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure05/summa_fileManager_9697_hedpom.txt'.
-start at 21:02:26
+start at 17:28:18
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure05/summa_zDecisions_9697_hedpom.txt
    1 simulStart: 1996-11-28 00:00
@@ -1194,18 +1219,19 @@ Skipping over SLTYPE = STAS-RUC
  ratioDrip2Unloading
  maxStepsPerFile, maxLength =         1742       19162
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure05/storckSite_1996-11-28-00_spinup_hedpom9697_1.nc
-initial date/time = 2018-03-01  21:02:26.001
-  final date/time = 2018-03-01  21:02:39.458
+initial date/time = 2018-03-02  17:28:18.270
+  final date/time = 2018-03-02  17:28:34.490
 
-     elapsed time =    13.45700     s
-       or             0.2242833     m
-       or             3.7380556E-03 h
-       or             1.5575231E-04 d
+     elapsed time =    16.22000     s
+       or             0.2703333     m
+       or             4.5055556E-03 h
+       or             1.8773148E-04 d
 
  FORTRAN STOP: finished simulation successfully.
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG
 file_suffix is '_hedpom9798'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure05/summa_fileManager_9798_hedpom.txt'.
-start at 21:02:46
+start at 17:28:41
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure05/summa_zDecisions_9798_hedpom.txt
    1 simulStart: 1997-11-26 00:00
@@ -1245,18 +1271,19 @@ Skipping over SLTYPE = STAS
 Skipping over SLTYPE = STAS-RUC
  maxStepsPerFile, maxLength =         1586       17446
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure05/storckSite_1997-11-26-00_spinup_hedpom9798_1.nc
-initial date/time = 2018-03-01  21:02:46.007
-  final date/time = 2018-03-01  21:02:58.068
+initial date/time = 2018-03-02  17:28:41.110
+  final date/time = 2018-03-02  17:28:55.781
 
-     elapsed time =    12.06100     s
-       or             0.2010167     m
-       or             3.3502778E-03 h
-       or             1.3959491E-04 d
+     elapsed time =    14.67100     s
+       or             0.2445167     m
+       or             4.0752778E-03 h
+       or             1.6980324E-04 d
 
  FORTRAN STOP: finished simulation successfully.
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG
 file_suffix is '_storck9697'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure05/summa_fileManager_9697_storck.txt'.
-start at 21:03:04
+start at 17:29:02
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure05/summa_zDecisions_9697_storck.txt
    1 simulStart: 1996-11-28 00:00
@@ -1304,18 +1331,19 @@ Skipping over SLTYPE = STAS-RUC
  ratioDrip2Unloading
  maxStepsPerFile, maxLength =         1742       19162
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure05/storckSite_1996-11-28-00_spinup_storck9697_1.nc
-initial date/time = 2018-03-01  21:03:04.525
-  final date/time = 2018-03-01  21:03:15.801
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG
+initial date/time = 2018-03-02  17:29:02.292
+  final date/time = 2018-03-02  17:29:16.466
 
-     elapsed time =    11.27600     s
-       or             0.1879333     m
-       or             3.1322222E-03 h
-       or             1.3050926E-04 d
+     elapsed time =    14.17400     s
+       or             0.2362333     m
+       or             3.9372222E-03 h
+       or             1.6405093E-04 d
 
  FORTRAN STOP: finished simulation successfully.
 file_suffix is '_storck9798'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure05/summa_fileManager_9798_storck.txt'.
-start at 21:03:22
+start at 17:29:23
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure05/summa_zDecisions_9798_storck.txt
    1 simulStart: 1997-11-26 00:00
@@ -1355,18 +1383,19 @@ Skipping over SLTYPE = STAS
 Skipping over SLTYPE = STAS-RUC
  maxStepsPerFile, maxLength =         1586       17446
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure05/storckSite_1997-11-26-00_spinup_storck9798_1.nc
-initial date/time = 2018-03-01  21:03:22.555
-  final date/time = 2018-03-01  21:03:35.400
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG
+initial date/time = 2018-03-02  17:29:23.052
+  final date/time = 2018-03-02  17:29:37.623
 
-     elapsed time =    12.84500     s
-       or             0.2140833     m
-       or             3.5680556E-03 h
-       or             1.4866898E-04 d
+     elapsed time =    14.57100     s
+       or             0.2428500     m
+       or             4.0475000E-03 h
+       or             1.6864583E-04 d
 
  FORTRAN STOP: finished simulation successfully.
 file_suffix is '_reynoldsConstantDecayRate'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure06/summa_fileManager_reynoldsConstantDecayRate.txt'.
-start at 21:03:41
+start at 17:29:44
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure06/summa_zDecisions_reynoldsConstantDecayRate.txt
    1 simulStart: 2005-07-01 00:00
@@ -1424,18 +1453,19 @@ Skipping over SLTYPE = STAS-RUC
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure06/albedoTest_2005-07-01-00_spinup_reynoldsConstantDecayRate_1.nc
  maxStepsPerFile, maxLength =        10945      153230
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure06/albedoTest_2005-2006_reynoldsConstantDecayRate_1.nc
-initial date/time = 2018-03-01  21:03:41.875
-  final date/time = 2018-03-01  21:04:08.565
+initial date/time = 2018-03-02  17:29:44.091
+  final date/time = 2018-03-02  17:30:20.210
 
-     elapsed time =    26.69000     s
-       or             0.4448333     m
-       or             7.4138889E-03 h
-       or             3.0891204E-04 d
+     elapsed time =    36.11900     s
+       or             0.6019833     m
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG
+       or             1.0033056E-02 h
+       or             4.1804398E-04 d
 
  FORTRAN STOP: finished simulation successfully.
 file_suffix is '_reynoldsVariableDecayRate'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure06/summa_fileManager_reynoldsVariableDecayRate.txt'.
-start at 21:04:15
+start at 17:30:27
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure06/summa_zDecisions_reynoldsVariableDecayRate.txt
    1 simulStart: 2005-07-01 00:00
@@ -1493,18 +1523,19 @@ Skipping over SLTYPE = STAS-RUC
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure06/albedoTest_2005-07-01-00_spinup_reynoldsVariableDecayRate_1.nc
  maxStepsPerFile, maxLength =        10945      153230
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure06/albedoTest_2005-2006_reynoldsVariableDecayRate_1.nc
-initial date/time = 2018-03-01  21:04:15.538
-  final date/time = 2018-03-01  21:04:45.554
+initial date/time = 2018-03-02  17:30:27.470
+  final date/time = 2018-03-02  17:31:05.912
 
-     elapsed time =    30.01600     s
-       or             0.5002667     m
-       or             8.3377778E-03 h
-       or             3.4740741E-04 d
+     elapsed time =    38.44200     s
+       or             0.6407000     m
+       or             1.0678333E-02 h
+       or             4.4493056E-04 d
 
  FORTRAN STOP: finished simulation successfully.
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG
 file_suffix is '_senatorConstantDecayRate'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure06/summa_fileManager_senatorConstantDecayRate.txt'.
-start at 21:04:52
+start at 17:31:13
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure06/summa_zDecisions_senatorConstantDecayRate.txt
    1 simulStart: 2010-07-01 00:00
@@ -1562,18 +1593,19 @@ Skipping over SLTYPE = STAS-RUC
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure06/albedoTest_2010-07-01-00_spinup_senatorConstantDecayRate_1.nc
  maxStepsPerFile, maxLength =        10945      153230
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure06/albedoTest_2010-2011_senatorConstantDecayRate_1.nc
-initial date/time = 2018-03-01  21:04:52.447
-  final date/time = 2018-03-01  21:05:22.249
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+initial date/time = 2018-03-02  17:31:13.214
+  final date/time = 2018-03-02  17:31:47.785
 
-     elapsed time =    29.80200     s
-       or             0.4967000     m
-       or             8.2783333E-03 h
-       or             3.4493056E-04 d
+     elapsed time =    34.57100     s
+       or             0.5761833     m
+       or             9.6030556E-03 h
+       or             4.0012731E-04 d
 
  FORTRAN STOP: finished simulation successfully.
 file_suffix is '_senatorVariableDecayRate'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure06/summa_fileManager_senatorVariableDecayRate.txt'.
-start at 21:05:28
+start at 17:31:54
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure06/summa_zDecisions_senatorVariableDecayRate.txt
    1 simulStart: 2010-07-01 00:00
@@ -1631,18 +1663,19 @@ Skipping over SLTYPE = STAS-RUC
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure06/albedoTest_2010-07-01-00_spinup_senatorVariableDecayRate_1.nc
  maxStepsPerFile, maxLength =        10945      153230
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure06/albedoTest_2010-2011_senatorVariableDecayRate_1.nc
-initial date/time = 2018-03-01  21:05:28.840
-  final date/time = 2018-03-01  21:06:03.245
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
+initial date/time = 2018-03-02  17:31:54.655
+  final date/time = 2018-03-02  17:32:38.615
 
-     elapsed time =    34.40500     s
-       or             0.5734167     m
-       or             9.5569444E-03 h
-       or             3.9820602E-04 d
+     elapsed time =    43.96000     s
+       or             0.7326667     m
+       or             1.2211111E-02 h
+       or             5.0879630E-04 d
 
  FORTRAN STOP: finished simulation successfully.
 file_suffix is '_jarvis'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure07/summa_fileManager_riparianAspenJarvis.txt'.
-start at 21:06:09
+start at 17:32:45
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure07/summa_zDecisions_riparianAspenJarvis.txt
    1 simulStart: 2006-07-01 00:00
@@ -1704,18 +1737,19 @@ Skipping over SLTYPE = STAS-RUC
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure07/vegImpactsTranspire_2006-07-01-00_spinup_jarvis_1.nc
  maxStepsPerFile, maxLength =        10945      153230
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure07/vegImpactsTranspire_2006-2007_jarvis_1.nc
-initial date/time = 2018-03-01  21:06:09.788
-  final date/time = 2018-03-01  21:06:38.921
+initial date/time = 2018-03-02  17:32:45.335
+  final date/time = 2018-03-02  17:33:22.588
 
-     elapsed time =    29.13300     s
-       or             0.4855500     m
-       or             8.0925000E-03 h
-       or             3.3718750E-04 d
+     elapsed time =    37.25300     s
+       or             0.6208833     m
+       or             1.0348056E-02 h
+       or             4.3116898E-04 d
 
  FORTRAN STOP: finished simulation successfully.
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG
 file_suffix is '_ballBerry'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure07/summa_fileManager_riparianAspenBallBerry.txt'.
-start at 21:06:45
+start at 17:33:29
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure07/summa_zDecisions_riparianAspenBallBerry.txt
    1 simulStart: 2006-07-01 00:00
@@ -1777,18 +1811,19 @@ Skipping over SLTYPE = STAS-RUC
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure07/vegImpactsTranspire_2006-07-01-00_spinup_ballBerry_1.nc
  maxStepsPerFile, maxLength =        10945      153230
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure07/vegImpactsTranspire_2006-2007_ballBerry_1.nc
-initial date/time = 2018-03-01  21:06:45.859
-  final date/time = 2018-03-01  21:07:13.393
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG
+initial date/time = 2018-03-02  17:33:29.963
+  final date/time = 2018-03-02  17:34:05.820
 
-     elapsed time =    27.53400     s
-       or             0.4589000     m
-       or             7.6483333E-03 h
-       or             3.1868056E-04 d
+     elapsed time =    35.85700     s
+       or             0.5976167     m
+       or             9.9602778E-03 h
+       or             4.1501157E-04 d
 
  FORTRAN STOP: finished simulation successfully.
 file_suffix is '_simpleResistance'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure07/summa_fileManager_riparianAspenSimpleResistance.txt'.
-start at 21:07:20
+start at 17:34:12
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure07/summa_zDecisions_riparianAspenSimpleResistance.txt
    1 simulStart: 2006-07-01 00:00
@@ -1850,18 +1885,19 @@ Skipping over SLTYPE = STAS-RUC
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure07/vegImpactsTranspire_2006-07-01-00_spinup_simpleResistance_1.nc
  maxStepsPerFile, maxLength =        10945      153230
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure07/vegImpactsTranspire_2006-2007_simpleResistance_1.nc
-initial date/time = 2018-03-01  21:07:20.158
-  final date/time = 2018-03-01  21:07:48.158
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG
+initial date/time = 2018-03-02  17:34:12.908
+  final date/time = 2018-03-02  17:34:45.954
 
-     elapsed time =    28.00000     s
-       or             0.4666667     m
-       or             7.7777778E-03 h
-       or             3.2407407E-04 d
+     elapsed time =    33.04600     s
+       or             0.5507667     m
+       or             9.1794444E-03 h
+       or             3.8247685E-04 d
 
  FORTRAN STOP: finished simulation successfully.
 file_suffix is '_perturbRoots'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure08/summa_fileManager_riparianAspenPerturbRoots.txt'.
-start at 21:07:55
+start at 17:34:52
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure08/summa_zDecisions_riparianAspenPerturbRoots.txt
    1 simulStart: 2006-07-01 00:00
@@ -1923,18 +1959,19 @@ Skipping over SLTYPE = STAS-RUC
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure08/vegImpactsTranspire_2006-07-01-00_spinup_perturbRoots_1.nc
  maxStepsPerFile, maxLength =        10945      153230
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure08/vegImpactsTranspire_2006-2007_perturbRoots_1.nc
-initial date/time = 2018-03-01  21:07:55.230
-  final date/time = 2018-03-01  21:10:11.526
+initial date/time = 2018-03-02  17:34:52.754
+  final date/time = 2018-03-02  17:37:32.327
 
-     elapsed time =    136.2960     s
-       or              2.271600     m
-       or             3.7860000E-02 h
-       or             1.5775000E-03 d
+     elapsed time =    159.5730     s
+       or              2.659550     m
+       or             4.4325833E-02 h
+       or             1.8469097E-03 d
 
  FORTRAN STOP: finished simulation successfully.
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG
 file_suffix is '_1dRichards'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure09/summa_fileManager_1dRichards.txt'.
-start at 21:10:17
+start at 17:37:38
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure09/summa_zDecisions_1dRichards.txt
    1 simulStart: 2002-07-01 00:00
@@ -2006,18 +2043,19 @@ Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure09/basinR
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure09/basinRunoff_2006-2007_1dRichards_1.nc
  maxStepsPerFile, maxLength =        54793      767102
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure09/basinRunoff_2007-2008_1dRichards_1.nc
-initial date/time = 2018-03-01  21:10:17.927
-  final date/time = 2018-03-01  21:13:02.624
+initial date/time = 2018-03-02  17:37:38.840
+  final date/time = 2018-03-02  17:41:05.112
 
-     elapsed time =    164.6970     s
-       or              2.744950     m
-       or             4.5749167E-02 h
-       or             1.9062153E-03 d
+     elapsed time =    206.2720     s
+       or              3.437867     m
+       or             5.7297778E-02 h
+       or             2.3874074E-03 d
 
  FORTRAN STOP: finished simulation successfully.
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG
 file_suffix is '_lumpedTopmodel'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure09/summa_fileManager_lumpedTopmodel.txt'.
-start at 21:13:09
+start at 17:41:11
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure09/summa_zDecisions_lumpedTopmodel.txt
    1 simulStart: 2001-07-01 00:00
@@ -2091,18 +2129,19 @@ Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure09/basinR
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure09/basinRunoff_2006-2007_lumpedTopmodel_1.nc
  maxStepsPerFile, maxLength =        63553      889742
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure09/basinRunoff_2007-2008_lumpedTopmodel_1.nc
-initial date/time = 2018-03-01  21:13:09.102
-  final date/time = 2018-03-01  21:16:32.832
+initial date/time = 2018-03-02  17:41:11.590
+  final date/time = 2018-03-02  17:45:18.315
 
-     elapsed time =    203.7300     s
-       or              3.395500     m
-       or             5.6591667E-02 h
-       or             2.3579861E-03 d
+     elapsed time =    246.7250     s
+       or              4.112083     m
+       or             6.8534722E-02 h
+       or             2.8556134E-03 d
 
  FORTRAN STOP: finished simulation successfully.
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL
 file_suffix is '_distributedTopmodel'.
 file_master is '/summaTestCases_2.x/settings/wrrPaperTestCases/figure09/summa_fileManager_distributedTopmodel.txt'.
-start at 21:16:39
+start at 17:45:24
 Name of Model Output control file: /summaTestCases_2.x/settings/meta/Model_Output.txt
 decisions file =  /summaTestCases_2.x/settings/wrrPaperTestCases/figure09/summa_zDecisions_distributedTopmodel.txt
    1 simulStart: 2001-07-01 00:00
@@ -2176,12 +2215,13 @@ Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure09/basinR
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure09/basinRunoff_2006-2007_distributedTopmodel_1.nc
  maxStepsPerFile, maxLength =        63553      889742
 Created output file:/summaTestCases_2.x/output/wrrPaperTestCases/figure09/basinRunoff_2007-2008_distributedTopmodel_1.nc
-initial date/time = 2018-03-01  21:16:39.317
-  final date/time = 2018-03-01  21:36:41.009
+initial date/time = 2018-03-02  17:45:24.903
+  final date/time = 2018-03-02  18:09:35.228
 
-     elapsed time =    1201.692     s
-       or              20.02820     m
-       or             0.3338033     h
-       or             1.3908472E-02 d
+     elapsed time =    1450.325     s
+       or              24.17208     m
+       or             0.4028681     h
+       or             1.6786169E-02 d
 
  FORTRAN STOP: finished simulation successfully.
+Note: The following floating-point exceptions are signalling: IEEE_UNDERFLOW_FLAG IEEE_DENORMAL

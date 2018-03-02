@@ -14,15 +14,15 @@ This project demonstrates using files stored in [iRODS](https://irods.org) as th
 
 ## Usage
 
-A script named `configure-for-davrods.sh` has been created to prepare the host environment for running the [SUMMA Test Cases](https://ral.ucar.edu/projects/summa) using a docker container named ~~`summa:local`~~ bartnijssen/summa:latest.
+A script named `configure-for-davrods.sh` has been created to prepare the host environment for running the [SUMMA Test Cases](https://ral.ucar.edu/projects/summa) using a docker container named ~~`summa:local`~~ `bartnijssen/summa:latest`.
 
-This script:
+This script does (requires sudo rights):
 
-1. ~~builds the `summa:local` docker image from the [SUMMA source code in Gihtub](https://github.com/NCAR/summa)~~ Using default of [bartnijssen/summa:latest](https://hub.docker.com/r/bartnijssen/summa/) until build issues are resolved...
+1. ~~builds the `summa:local` docker image from the [SUMMA source code in Gihtub](https://github.com/NCAR/summa)~~ pulls the default of [bartnijssen/summa:latest](https://hub.docker.com/r/bartnijssen/summa/) until build issues are resolved...
 2. purges the local environment of containers, networks and volumes from prior runs
 3. untars the test cases and modifies their run scripts to conform to use with iRODS and [docker-davrods](https://github.com/RENCI/docker-davrods)
 4. installs an [iRODS 4.2.2 provider server](https://github.com/mjstealey/irods-provider-postgres) in docker, loads the SUMMA test case input data and prepares the output directories in iRODS space
-5. installs a DavRODS server in docker and creates a `davrods-volume` that contains the contents of the appropriate user in iRODS to share with `summa:bionic` containers as they are run
+5. installs a DavRODS server in docker and creates a `davrods-volume` that contains the contents of the appropriate user in iRODS to share with ~~`summa:local`~~ `bartnijssen/summa:latest` containers as they are run
 6. displays information to the user as to how to run the test cases once the envirnment is prepared
 
 **NOTE**: the `irods-provider` container will store it's configuration files and Vault in a local directory named `irods` via a host based volume mount. The SUMMA data can be observed at `summa-davrods/irods/var_irods/iRODS/Vault` as it's stored into iRODS.
