@@ -4,6 +4,23 @@ SUMMATESTCASES_DIR=$(pwd)/summaTestCases_2.x
 SUMMA_REPOSITORY=bartnijssen/summa
 SUMMA_TAG=latest
 
+_get_machine() {
+  local unameOut="$(uname -s)"
+  case "${unameOut}" in
+      Linux*)     machine=Linux;;
+      Darwin*)    machine=macOS;;
+      CYGWIN*)    machine=Cygwin;;
+      MINGW*)     machine=MinGw;;
+      *)          machine="UNKNOWN:${unameOut}"
+  esac
+  if [[ "$machine" != "macOS" ]] && [[ "$machine" != "Linux" ]]; then
+    echo "WARNING: ${machine} platform is unsupported at this time... exiting"
+    exit 1;
+  else
+    echo "INFO: configuring for ${machine}"
+  fi
+}
+
 ### NOT USED - due to failed build ###
 # clone summa repo if needed and build from develop branch
 _check_summa_image() {
@@ -67,10 +84,17 @@ _installTestCases_docker_sh() {
   INSTALLTESTCASES_DOCKER_FILE=${SUMMATESTCASES_DIR}/installTestCases_docker.sh
   INSTALLTESTCASES_DOCKER_FILE_DAVRODS=${SUMMATESTCASES_DIR}/installTestCases_docker_davrods.sh
   cp $INSTALLTESTCASES_DOCKER_FILE $INSTALLTESTCASES_DOCKER_FILE_DAVRODS
-  sed -i "" \
-    -e "s/mkdir -p/docker exec -u irods irods-provider imkdir -p/g" \
-    -e "s/BASEDIR=.*/BASEDIR=\//" \
-    $INSTALLTESTCASES_DOCKER_FILE_DAVRODS
+  if [[ "$machine" == "macOS" ]]; then
+    sed -i "" \
+      -e "s/mkdir -p/docker exec -u irods irods-provider imkdir -p/g" \
+      -e "s/BASEDIR=.*/BASEDIR=\//" \
+      $INSTALLTESTCASES_DOCKER_FILE_DAVRODS
+  elif [[ "$machine" == "Linux" ]]; then
+    sed -i \
+      "s/mkdir -p/docker exec -u irods irods-provider imkdir -p/g;
+      s/BASEDIR=.*/BASEDIR=\//" \
+      $INSTALLTESTCASES_DOCKER_FILE_DAVRODS
+  fi
 }
 
 # update runTestCases_docker_davrods.sh
@@ -78,12 +102,21 @@ _runTestCases_docker_sh() {
   RUNTESTCASES_DOCKER_FILE=${SUMMATESTCASES_DIR}/runTestCases_docker.sh
   RUNTESTCASES_DOCKER_FILE_DAVRODS=${SUMMATESTCASES_DIR}/runTestCases_docker_davrods.sh
   cp $RUNTESTCASES_DOCKER_FILE $RUNTESTCASES_DOCKER_FILE_DAVRODS
-  sed -i "" \
-    -e "s~DOCKER_TEST_CASES_PATH=.*~DOCKER_TEST_CASES_PATH="$(pwd)"~" \
-    -e "s~SUMMA_EXE=bartnijssen/summa:latest~SUMMA_EXE=$SUMMA_REPOSITORY:$SUMMA_TAG~" \
-    -e "s~DISK_MAPPING=.*~DISK_MAPPING='--mount source=davrods-volume,target=/summaTestCases_2.x'~" \
-    -e "s/docker run -v/sleep 5s; docker run --rm/g" \
+  if [[ "$machine" == "macOS" ]]; then
+    sed -i "" \
+      -e "s~DOCKER_TEST_CASES_PATH=.*~DOCKER_TEST_CASES_PATH="$(pwd)"~" \
+      -e "s~SUMMA_EXE=bartnijssen/summa:latest~SUMMA_EXE=$SUMMA_REPOSITORY:$SUMMA_TAG~" \
+      -e "s~DISK_MAPPING=.*~DISK_MAPPING='--mount source=davrods-volume,target=/summaTestCases_2.x'~" \
+      -e "s/docker run -v/sleep 5s; docker run --rm/g" \
     $RUNTESTCASES_DOCKER_FILE_DAVRODS
+  elif [[ "$machine" == "Linux" ]]; then
+    sed -i \
+      "s~DOCKER_TEST_CASES_PATH=.*~DOCKER_TEST_CASES_PATH="$(pwd)"~;
+      s~SUMMA_EXE=bartnijssen/summa:latest~SUMMA_EXE=$SUMMA_REPOSITORY:$SUMMA_TAG~;
+      s~DISK_MAPPING=.*~DISK_MAPPING='--mount source=davrods-volume,target=/summaTestCases_2.x'~;
+      s/docker run -v/sleep 5s; docker run --rm/g" \
+      $RUNTESTCASES_DOCKER_FILE_DAVRODS
+  fi
 }
 
 # clean up docker environment
@@ -103,7 +136,7 @@ _clean_slate() {
 # instantiate the iRODS server
 _irods_server() {
   if [[ -d $(pwd)/irods ]]; then
-    rm -rf $(pwd)/irods
+    sudo rm -rf $(pwd)/irods
     mkdir -p $(pwd)/irods/var_irods
     mkdir -p $(pwd)/irods/etc_irods
     mkdir -p $(pwd)/irods/var_pgdata
@@ -114,6 +147,7 @@ _irods_server() {
   	-v $(pwd)/irods/var_irods:/var/lib/irods \
   	-v $(pwd)/irods/etc_irods:/etc/irods \
   	-v $(pwd)/irods/var_pgdata:/var/lib/postgresql/data \
+    -e UID_IRODS=${UID} \
   	mjstealey/irods-provider-postgres:4.2.2 \
   	-i run_irods
   echo "Allowing irods-provider to setup..."
@@ -133,6 +167,7 @@ _populate_irods() {
     -e IRODS_USER_NAME=rods \
     -e IRODS_ZONE_NAME=tempZone \
     -e IRODS_PASSWORD=rods \
+    -e UID_IRODS=${UID} \
     --net=summa-davrods \
     -v $(pwd)/summaTestCases_2.x:/summaTestCases_2.x \
     mjstealey/irods-icommands:4.2.2 \
@@ -142,6 +177,7 @@ _populate_irods() {
     -e IRODS_USER_NAME=rods \
     -e IRODS_ZONE_NAME=tempZone \
     -e IRODS_PASSWORD=rods \
+    -e UID_IRODS=${UID} \
     --net=summa-davrods \
     -v $(pwd)/summaTestCases_2.x:/summaTestCases_2.x \
     mjstealey/irods-icommands:4.2.2 \
@@ -184,6 +220,9 @@ _davrods_volume() {
 }
 
 #### main ####
+
+# get machine type
+_get_machine
 
 # check for ${SUMMA_REPOSITORY}:${SUMMA_TAG} image
 # _check_summa_image

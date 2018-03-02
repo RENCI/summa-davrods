@@ -1,11 +1,36 @@
-irods-provider
-davrods-server
-irods-provider
-davrods-server
-summa-davrods
-davrods-volume
-04266021c17a8268b70b1dada922a088f13aaf862637110c1268ca30889a585b
-ff5e52b4ce518820e626b3079b60e9b22aa8d91e0bb8b841a6168b339667601c
+$ ./configure-for-davrods.sh
+INFO: configuring for macOS
+Error response from daemon: No such container: irods-provider
+Error response from daemon: No such container: davrods-server
+Error: No such container: irods-provider
+Error: No such container: davrods-server
+Error: No such network: summa-davrods
+Error: No such volume: davrods-volume
+c1db3280662e80744ae4cbcb1ffa9b47530c30d4d305ec081c6e7a22b79e488d
+Password:
+Unable to find image 'mjstealey/irods-provider-postgres:4.2.2' locally
+4.2.2: Pulling from mjstealey/irods-provider-postgres
+3e17c6eae66c: Pull complete
+edb9dc1cfcb8: Pull complete
+7a344e5b3663: Pull complete
+d619f9c5def6: Pull complete
+225b82de1e67: Pull complete
+10daa23c1d9a: Pull complete
+4ba4a4b2d69b: Pull complete
+7138e38f6433: Pull complete
+7d473ec94c4a: Pull complete
+6f370795820a: Pull complete
+ce9d4bbd0313: Pull complete
+27d38c1cd828: Pull complete
+884c0b44a64a: Pull complete
+761d3309275b: Pull complete
+d886aefb9105: Pull complete
+49b6d57ca71e: Pull complete
+cba15c1ce611: Pull complete
+bc37fa85b40b: Pull complete
+Digest: sha256:38dd8e81afce87b0f24a731b0a8dc49ebbd673e3e75c417e418482eabb448a2b
+Status: Downloaded newer image for mjstealey/irods-provider-postgres:4.2.2
+3c29075ada941ec82f0b4112789734fba4dbffc2a7b25688e1423108c4b891d5
 Allowing irods-provider to setup...
 ...waiting
 ...waiting
@@ -16,11 +41,33 @@ Allowing irods-provider to setup...
 INFO: irods-provider is running
 TestCases for docker installed
 /Users/stealey/Github/scidas/summa-davrods
+Unable to find image 'mjstealey/irods-icommands:4.2.2' locally
+4.2.2: Pulling from mjstealey/irods-icommands
+3e17c6eae66c: Already exists
+9df58a7cfb06: Pull complete
+55445a648d48: Pull complete
+ab429d1c3da0: Pull complete
+b7dc2cfc4640: Pull complete
+8dc28e9cf7f2: Pull complete
+ad87f068b212: Pull complete
+f514803245bc: Pull complete
+Digest: sha256:6e620fa6eed375ff4f39001638be88a799243101545c4da54fdab75903d7a88f
+Status: Downloaded newer image for mjstealey/irods-icommands:4.2.2
 /tempZone/home/rods:
   C- /tempZone/home/rods/output
   C- /tempZone/home/rods/settings
   C- /tempZone/home/rods/testCases_data
-981aadbf60c91b2c7fee8e395c6c32d759f90d9a91e7853f991aff2b33e51f5f
+Unable to find image 'renci/docker-davrods:4.2.1' locally
+4.2.1: Pulling from renci/docker-davrods
+af4b0a2388c6: Pull complete
+e85b33acd5b1: Pull complete
+48238d008250: Pull complete
+d5447b89bce2: Pull complete
+0b604375c8dc: Pull complete
+ffc5548db4bb: Pull complete
+Digest: sha256:875e359ef86441eca60c65c7db6dbe29e4a5387e497107fec06729141443938c
+Status: Downloaded newer image for renci/docker-davrods:4.2.1
+c213372ca9ad0995f444c51a9fe162d212e1df7435358b9efac79797355036d4
 Allowing davrods-server to setup...
 curl: (52) Empty reply from server
 ...waiting
