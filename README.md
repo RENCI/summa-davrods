@@ -12,7 +12,62 @@ This project demonstrates using files stored in [iRODS](https://irods.org) as th
 	$ docker plugin install fentas/davfs
 	```
 
-## Usage
+## SUMMA
+
+SUMMA (Clark et al., [2015a](http://summa.readthedocs.io/en/latest/#clark_2015a);[b](http://summa.readthedocs.io/en/latest/#clark_2015b);[c](http://summa.readthedocs.io/en/latest/#clark_2015c)) is a hydrologic modeling framework that can be used for the systematic analysis of alternative model conceptualizations with respect to flux parameterizations, spatial configurations, and numerical solution techniques. It can be used to configure a wide range of hydrological model alternatives and we anticipate that systematic model analysis will help researchers and practitioners understand reasons for inter-model differences in model behavior. When applied across a large sample of catchments, SUMMA may provide insights in the dominance of different physical processes and regional variability in the suitability of different modeling approaches. An important application of SUMMA is selecting specific physics options to reproduce the behavior of existing models – these applications of "**model mimicry**" can be used to define reference (benchmark) cases in structured model comparison experiments, and can help diagnose weaknesses of individual models in different hydroclimatic regimes.
+
+Documentation for [Structure for Unifying Multiple Modeling Alternatives: SUMMA](http://summa.readthedocs.io/en/latest/)
+
+### SUMMA using Docker
+
+Reference: [http://summa.readthedocs.io/en/latest/installation/SUMMA_docker/](http://summa.readthedocs.io/en/latest/installation/SUMMA_docker/)
+
+To do actual SUMMA runs, you need to provide a bit more information. The main thing is that you will need to provide the path of the master file (`-m`) so that SUMMA knows where to read and write its input and output. The other part is that you need to set up a mapping between your local file paths and the path that SUMMA has access to within the Docker container. This mapping can be set up on the Docker command-line by using the `-v` or `--mount` option to `docker run`. See `docker run --help` for more details.
+
+- **Example**: in the context of this project using a mount made to the container at `/summaTestCases_2.x`
+
+    ```
+    $ docker run --rm \
+      --mount source=davrods-volume,target=/summaTestCases_2.x \
+      bartnijssen/summa:latest \
+      -p never \
+      -s _testSumma_docker \
+      -m /summaTestCases_2.x/settings/syntheticTestCases/celia1990/summa_fileManager_celia1990.txt
+    ```
+
+- **Help**: summa help information
+
+    ```
+    $ docker run --rm bartnijssen/summa:latest --h
+    
+    
+    Usage: summa.exe -m master_file [-s fileSuffix] [-g startGRU countGRU] [-h iHRU] [-r freqRestart] [-p freqProgress] [-c]
+     summa.exe          summa executable
+    
+    Running options:
+     -m --master        Define path/name of master file (required)
+     -s --suffix        Add fileSuffix to the output files
+     -g --gru           Run a subset of countGRU GRUs starting from index startGRU
+     -h --hru           Run a single HRU with index of iHRU
+     -r --restart       Define frequency [y,m,d,never] to write restart files
+     -p --progress      Define frequency [m,d,h,never] to print progress
+     -v --version       Display version infotmation of the current built
+    ```
+
+- **Version**: summa version information
+
+    ```
+    $ docker run --rm bartnijssen/summa:latest -v
+    ----------------------------------------------------------------------
+         SUMMA - Structure for Unifying Multiple Modeling Alternatives
+                               Version: v2.0.0
+                   Build Time: Fri Dec  1 19:30:29 UTC 2017
+                        Git Branch: master-0-g9ed7fb5
+              Git Hash: 9ed7fb55e0b2c60fc1a92a855c25b382593fe835
+    ----------------------------------------------------------------------
+    ```
+
+## Usage: summa-davrods
 
 A script named `configure-for-davrods.sh` has been created to prepare the host environment for running the [SUMMA Test Cases](https://ral.ucar.edu/projects/summa) using a docker container named ~~`summa:local`~~ `bartnijssen/summa:latest`.
 
