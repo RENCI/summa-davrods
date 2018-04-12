@@ -196,7 +196,7 @@ _davrods_server() {
    	-p 8080:80 \
     -h davrods-server \
     --net=summa-davrods \
-   	renci/docker-davrods:4.2.1
+   	renci/docker-davrods:4.2.2
   echo "Allowing davrods-server to setup..."
   DAVRODS=$(echo $(curl -sSL -D - localhost:8080 -o /dev/null | grep 'HTTP/1.1 401 Unauthorized') | tr -d '\r')
   until [ "$DAVRODS" == "HTTP/1.1 401 Unauthorized" ]; do
